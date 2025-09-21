@@ -137,7 +137,7 @@ class RRuleGenerator extends StatelessWidget {
 
     final String excludeDates = _excludeDatesPicker?.getRRule() ?? '';
     final String timeOfDay = timeOfDayNotifier.value != null
-        ? ';BYHOUR=${timeOfDayNotifier.value!.hour};BYMINUTE=${timeOfDayNotifier.value!.minute}'
+        ? ';BYHOUR=${timeOfDayNotifier.value!.hour};BYMINUTE=${timeOfDayNotifier.value!.minute};BYSECOND=0'
         : '';
 
     if (countTypeNotifier.value == 0) {
